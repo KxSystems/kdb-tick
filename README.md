@@ -1,18 +1,9 @@
-# kdb+tick
+# Robotrader XIV: A Tick by Tick Intro to kdb+/q
 
-Files previously at code.kx.com/wsvn/kx/kdb+tick
+This repository contains the source code and notebooks associated with the talk
+_A Tick by Tick Intro to kdb+/q_ that took place at the [Robotrader
+XIV](https://blogs.upm.es/robotrader/xiv-edicion-2024/) (2024) conference on
+March 5th in Madrid. Please take a look at [the talk
+slides](https://docs.google.com/presentation/d/1PneXY2US6OTHyNBtVt-ok3oYZDmxigYdiuqccvCCd6E/edit?usp=sharing),
+where references are clearly stated.
 
-
-## Hot-linking
-
-You are welcome to download and use this code according to the terms of the licence. 
-
-Kx Systems recommends you do not link your application to this repository, 
-which would expose your application to various risks:
-
-- This is not a high-availability hosting service
-- Updates to the repo may break your application 
-- Code refactoring might return 404s to your application
-
-Instead, download code and subject it to the version control and regression testing 
-you use for your application.
