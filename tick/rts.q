@@ -1,6 +1,3 @@
-/q tick/rts.q [host]:port[:usr:pwd] [host]:port[:usr:pwd]
-/2008.09.09 .k ->.q
-
 quote:([]time:`timespan$();sym:`symbol$();bid:`float$();ask:`float$();bsize:`int$();asize:`int$())
 
 \l tick/u.q
