@@ -1,4 +1,4 @@
-/q tick/r.q [host]:port[:usr:pwd] [host]:port[:usr:pwd]
+/q tick/rdb.q [host]:port[:usr:pwd] [host]:port[:usr:pwd]
 /2008.09.09 .k ->.q
 
 if[not "w"=first string .z.o;system "sleep 1"];
@@ -17,4 +17,11 @@ upd:insert;
 
 / connect to ticker plant for (schema;(logcount;log))
 .u.rep .(hopen `$":",.u.x 0)"(.u.sub[`;`];`.u `i`L)";
+
+/ access function in RDB/HDB
+selectFunc:{[tbl;sd;ed;ids]
+  $[`date in cols tbl;
+  select from tbl where date within (sd;ed),sym in ids;
+  [res:$[.z.D within (sd;ed); select from tbl where sym in ids;0#value tbl];
+    `date xcols update date:.z.D from res]] }
 
